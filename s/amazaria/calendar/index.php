@@ -1,1 +1,0 @@
-<h1>Calendar, ../s/amazaria!</h1>
