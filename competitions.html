@@ -73,9 +73,12 @@ nav {
 .navigation * {
   background-color: orange;
 }
-#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a {
+#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a, #dd a {
 	font-weight: bold;
 	color: #3f3f3f;
+}
+#dd a:focus {
+	background-color: #E59400;
 }
 </style>
 
@@ -112,6 +115,11 @@ nav {
 	      <li id="team"><a href="team.html">Team</a></li>
 	      <li id="outreach"><a href="outreach.html">Outreach</a></li>
 	      <li id="contact"><a href="contact.html">Contact Us</a></li>
+	      <li id="dd" class="dropdown"> <a id="pastSeasons" href="https://robonatick3737.github.io/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Past Seasons<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li id="season2015"><a style="background-color: orange;" href="http://www.natickhighwebdesign.com/hankstanks/index.html" target="_blank">2015-2016 Season</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
