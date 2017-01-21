@@ -7,7 +7,7 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <link rel="shortcut icon" type="image/png" href="images/tank_icon.png" style="border-radius: 10px;"/>
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>3737 Hank's Tanks | Robot</title>
+<title>3737 Hank's Tanks | Preliminary Robot</title>
 <!-- InstanceEndEditable -->
 <!-- Bootstrap -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -73,7 +73,7 @@ nav {
 .navigation * {
   background-color: orange;
 }
-#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a, #dd a {
+#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a, #dd a, #finalrobot a {
 	font-weight: bold;
 	color: #3f3f3f;
 }
@@ -114,7 +114,12 @@ nav {
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li id="home"><a href="index.html">Home</a></li>
-              <li id="robot"><a href="robot.html">Robot</a></li>
+	      <li id="dd" class="dropdown"> <a id="robots" href="https://robonatick3737.github.io/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Robots<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li id="robot"><a style="background-color: orange;" href="preliminary_robot.html">Preliminary Robot</a></li>
+                  <li id="finalrobot"><a style="background-color: orange;" href="final_robot.html">Final Robot</a></li>
+                </ul>
+              </li>
 	      <li id="competitions"><a href="competitions.html">Competitions</a></li>
 	      <li id="team"><a href="team.html">Team</a></li>
 	      <li id="outreach"><a href="outreach.html">Outreach</a></li>
@@ -131,7 +136,8 @@ nav {
     </div>
   </div>
   <div class="page-header">
-    <h1><!-- InstanceBeginEditable name="Header" -->Robot<!-- InstanceEndEditable --></h1>
+    <h1><!-- InstanceBeginEditable name="Header" -->Preliminary Robot<!-- InstanceEndEditable --></h1>
+<p class="lead">The robot we used before our second Qualifier.</p>
   </div>
   <div>
 
@@ -173,7 +179,7 @@ nav {
   </div>
   <hr class="featurette-divider">
    <!-- /END THE FEATURETTES --> 
-<img class="featurette-image img-responsive center-block" src="images/robot/full_robot.jpg" alt="Screenshot of online interface" style="border-radius: 10px">
+<img class="featurette-image img-responsive center-block" src="images/robot/full_robot.jpg" alt="Picture of entire preliminary robot" style="border-radius: 10px">
   <hr class="featurette-divider">
 </div>
   

@@ -116,7 +116,7 @@ nav {
               <li id="home"><a href="index.html">Home</a></li>
 	      <li id="dd" class="dropdown"> <a id="robots" href="https://robonatick3737.github.io/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Robots<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li id="robot"><a style="background-color: orange;" href="robot.html">Preliminary Robot</a></li>
+                  <li id="robot"><a style="background-color: orange;" href="preliminary_robot.html">Preliminary Robot</a></li>
                   <li id="finalrobot"><a style="background-color: orange;" href="final_robot.html">Final Robot</a></li>
                 </ul>
               </li>
@@ -137,12 +137,13 @@ nav {
   </div>
   <div class="page-header">
     <h1><!-- InstanceBeginEditable name="Header" -->Final Robot<!-- InstanceEndEditable --></h1>
+<p class="lead">The robot we are using starting with our second Qualifier.</p>
   </div>
   <div>
 
 
 <!-- START THE FEATURETTES -->
-  <div class="row featurette">
+  <!--<div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">CAD<span class="text-muted"></span></h2>
       <p class="lead">See the embedded full CAD model of our robot. We create our model in PTC Creo.</p>
@@ -151,43 +152,42 @@ nav {
     <div class="col-md-5"> <iframe width="100%" height="400" src="https://b2b.partcommunity.com/community/partcloud/embedded.html#!embedded-viewer?name=2016-2017+Season+Robot&model_id=47757&portal=b2b&noAutoload=true&autoRotate=false&hideMenu=false&topColor=%23dde7ed&bottomColor=%23ffffff&cameraParams=%7B%22camera%22%3A%22perpective%22%2C%22rotation%22%3A%7B%22roll%22%3A-19.860886744085768%2C%22pitch%22%3A16.692246985842143%2C%22yaw%22%3A-117.75784549563093%7D%2C%22rotation_center%22%3A%7B%22x%22%3A-4.9608659744262695%2C%22y%22%3A-4.456413984298706%2C%22z%22%3A7.524803340435028%7D%2C%22focal_length%22%3A33.97274819482342%2C%22pan%22%3A%7B%22x%22%3A0%2C%22y%22%3A0%7D%2C%22frustum%22%3A%7B%22width%22%3A134.824335849343%2C%22height%22%3A107.75117604023798%7D%2C%22mesh_rotation%22%3A%7B%22x%22%3A-1.1448267491740167%2C%22y%22%3A0.011640724990215404%2C%22z%22%3A0.9942262274636019%2C%22order%22%3A%22XYZ%22%7D%2C%22environment%22%3A%7B%22skyboxes%22%3A%7B%22path%22%3A%22%22%2C%22name%22%3A%22%22%2C%22id%22%3A%22%22%2C%22type%22%3A%22jpg%22%2C%22lastActive%22%3A%22%22%7D%2C%22floors%22%3A%7B%22path%22%3A%22%22%2C%22name%22%3A%22%22%2C%22id%22%3A%22%22%2C%22type%22%3A%22jpg%22%2C%22lastActive%22%3A%22%22%7D%7D%7D&varsettransfer=" frameborder="0" id="EmbeddedView-Iframe-47757" allowfullscreen></iframe>
     </div>
   </div>
-  <hr class="featurette-divider">
+  <hr class="featurette-divider">-->
   <div class="row featurette">
     <div class="col-md-7 col-md-push-5">
       <h2 class="featurette-heading">Drive system<span class="text-muted"></span></h2>
-      <p class="lead">The drive system of our final robot is a west coast system for better maneuverability. It is also geared for greater speed.</p>
+      <p class="lead">Our drive system uses 4 NeveRest 20 motors chained directly to 6 wheels, 2 grey stealth wheels and 4 omniwheels. With the stealth wheels in the middle on each side, and the omniwheels on the end, our robot has great traction, as well as incredibly fast turning. As Velocity Vortex is a fast game, the NeveRest 20 motors allow our robot to zip around the field much faster than would be possible with just NeveRest 40 motors. In order to keep all motors on track together, and minimize the space of the drive system, we use large sprockets on all motors and wheels, and chain them together in an over-under pattern. The large sprockets allow for sufficient contact between the chain and the sprockets, as well as more efficient use of space than other methods for chaining all the wheels and motors together on one side.</p>
     </div>
-    <div class="col-md-5 col-md-pull-7"> <img class="featurette-image img-responsive center-block" src="other/field.png" alt="Picture of drive system" style="border:1px solid black;"> </div>
+    <div class="col-md-5 col-md-pull-7"> <img class="featurette-image img-responsive center-block" src="images/finalrobot/drive_system.jpg" alt="Picture of drive system" style="border:1px solid black;"> </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Button pusher<span class="text-muted"></span></h2>
+      <p class="lead">Our robot uses 2 continuous rotation servos geared 2:1 for speed to power rack and pinion button-pushers. Taking after the success of the button pusher on our preliminary robot, these two button pushers, one on each side of the robot, extend out from the side, allowing us to drive in a straight line and simply extend the rack and pinion for extremely fast and reliable button pushing.</p>
+    </div>
+    <div class="col-md-5"> <img class="featurette-image img-responsive center-block" src="images/finalrobot/button_pusher.jpg" alt="Picture of button pusher" style="border:1px solid black;">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7 col-md-push-5">
+      <h2 class="featurette-heading">Particle shooting system<span class="text-muted"></span></h2>
+      <p class="lead">Our ball shooting and collecting mechanism has two main stages, the collecting system and the shooting system. The collecting system has a wide harvester in the front to initially bring particles into our robot, and then a conveyor belt in a triangular shape with flaps, wide enough for one particle. This triangular shape makes the particles wrap around in a curved container, feeding them directly from the harvester into the shooting system. By running this system, geared 2:1 for speed, we are able to collect and hold up to 5 particles. Once we have collected as many particles as we can, we start up the shooting system, two parallel flywheels mounted on NeveRest 3.7 gear motors, and by running the collecting system at full speed, send all the particles through the flywheels accurately and quickly.</p>
+    </div>
+    <div class="col-md-5 col-md-pull-7"> <img class="featurette-image img-responsive center-block" src="images/finalrobot/shooting_system.jpg" alt="Picture of particle shooting system" style="border:1px solid black"> </div>
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Cap ball lifter<span class="text-muted"></span></h2>
-      <p class="lead">To lift the cap ball, we use a cascading rack-and-pinion system. This allows us to have a tall lifter to reach the vortexes. Also, with this system, the structure is sturdy to lift the large cap ball.</p>
+      <p class="lead">Our cap ball system uses 4 stage rack and pinion as a linear slide system. Using a single NeveRest 60 motor geared 1:1 to power the pinion on the first stage, and then cascading slides to power the next 3, we are able to lift the cap ball over the vortex in a matter of seconds. For the 3 cascading stages, we take advantage of the racks and the slider blocks to create a lightweight and strong linear slide system. Using a copper pipe running through the last stage with forks clamped onto the ends, we pick up the cap ball with a forklift-like mechanism, and are able to hold it while we drive to the vortex and place it in.</p>
     </div>
-    <div class="col-md-5"> <img class="featurette-image img-responsive center-block" src="images/robot/harvester.jpg" alt="Picture of harvester" style="border:1px solid black;">
-    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">Intake system<span class="text-muted"></span></h2>
-      <p class="lead">Our robot's intake system uses a harvester and then tread to collect particles. We can hold a maximum of 5 particles.</p>
-    </div>
-    <div class="col-md-5 col-md-pull-7"> <img class="featurette-image img-responsive center-block" src="images/robot/button_pusher.jpg" alt="Picture of button pusher" style="border:1px solid black"> </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Launching system<span class="text-muted"></span></h2>
-      <p class="lead">The robot's particle launching system consists of two flywheels to propel the particles. It is mounted on NeveRest 3.7 gear motors for power and speed.</p>
-    </div>
-    <div class="col-md-5"> <img class="featurette-image img-responsive center-block" src="images/robot/harvester.jpg" alt="Picture of harvester" style="border:1px solid black;">
+    <div class="col-md-5"> <img class="featurette-image img-responsive center-block" src="images/finalrobot/cap_ball_lifter.jpg" alt="Picture of cap ball lifter" style="border:1px solid black;">
     </div>
   </div>
-  <hr class="featurette-divider">
-   <!-- /END THE FEATURETTES --> 
-<img class="featurette-image img-responsive center-block" src="images/robot/full_robot.jpg" alt="Screenshot of online interface" style="border-radius: 10px">
+  <!--<hr class="featurette-divider">
+<img class="featurette-image img-responsive center-block" src="images/finalrobot/full_robot.jpg" alt="Picture of entire final robot" style="border-radius: 10px">-->
   <hr class="featurette-divider">
 </div>
   
