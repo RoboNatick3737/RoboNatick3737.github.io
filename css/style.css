@@ -6,3 +6,6 @@
     display: block;
 }
 }
+nav a:hover {
+    opacity: 0.7
+}
