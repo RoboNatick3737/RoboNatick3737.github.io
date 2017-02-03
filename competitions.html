@@ -161,8 +161,50 @@ nav {
       <p class="lead">Our Qualifier at Andover was very good. Our robot was consistent in tele-op, scoring 8-10 particles in the corner vortex and getting the beacons quickly. Autonomous also worked well, hitting the cap ball and scoring 2 particles in the corner vortex. We finished in 5th place in the Qualifying Round and made it to the Semifinals. We won the Connect Award for our outreach and will be advancing to the State Championships!</p>
     </div>
 
-    <div class="col-md-5"> <img src="images/competitions/andover/team.jpeg" width="100%" alt="Andover team"> </div>
-    </div>
+    <div class="col-md-5"> <div id="slider2" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/andover/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic6.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel2" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/andover/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/andover/pic6.jpg" />
+    </li>
+  </ul>
+</div>    </div>
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
@@ -170,8 +212,57 @@ nav {
       <h2 class="featurette-heading">Qualifier <span class="text-muted">at Gann Academy (January 22, 2017)</span></h2>
       <p class="lead">We had a lot of fun at Gyre at Gann. Our robot worked well in teleop, pressing beacons, launching particles into the center vortex, and occasionally lifting the cap ball. Autonomous worked good as well, shooting 1-2 particles in the center vortex, hitting the cap ball onto the playing field, and parking on the center vortex base. We got to the tiebreaker match of the finals! Though we had a few hiccups here and there, we are at a very good stage for States. With a few improvements for consistency and a new autonomous to press beacons, we will be ready to go!</p>
     </div>
-    <div class="col-md-5"> <img class="featurette-image img-responsive center-block" src="images/competitions/gann/team.JPG" alt="Gann team"> </div>
-  </div>
+    <div class="col-md-5">
+<div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/gann/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic7.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/gann/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/gann/pic7.jpg" />
+    </li>
+  </ul>
+</div></div></div>
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
@@ -199,6 +290,64 @@ nav {
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Nice scrolling -->
 <script src="js/scrolling.js"></script>
-
+
+<!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel2').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider2'
+      });
+
+      $('#slider2').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel2",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 <!-- InstanceEnd --></html>
