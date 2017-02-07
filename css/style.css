@@ -18,6 +18,9 @@ box-shadow: 0;
 display: inline;
 float: left;
 }
+#share-buttons img:hover {
+opacity: 0.7;
+}
 .pull-right {
 padding-top: 3px;
 }
