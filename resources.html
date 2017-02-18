@@ -168,7 +168,8 @@ nav {
     <div class="col-md-7">
       <h2 class="featurette-heading">OPR and CCWM Calculator<span class="text-muted"></span></h2>
       <p class="lead">We have programmed a spreadsheet to calculate, given the match list and match scores, the OPR and CCWM for each team.
-      <ul class="lead">
+      <!--<a "explanation_link">What are OPR and CCWM?</a>-->
+      <ul class="lead" id="explanation">
           <li>OPR (Offensive Power Rating): How many points, on average, the team scores</li>
           <ul>
               <li>Large OPR: Good (the team generally scores a lot of points)</li>
@@ -180,6 +181,7 @@ nav {
               <li>Small CCWM: Bad (the team generally contributes little to the winning margin)</li>
               <li>Negative CCWM: Very bad (the team generally actively contributes to losing the match)</li>
           </ul>
+	  <li>Disclaimer: OPR and CCWM could misrepresent a bad team that is carried. Make sure to watch the matches and have an intuitive understanding of the teams as well.</li>
       </ul></p>
       <p class="lead"><b>Directions:</b> Make a copy (File > Make a copy...) of <a href="https://docs.google.com/spreadsheets/d/1S-I0Y18jlorYpEWCci4gc-ROmuOJRrH-KRcd1sMhVRM/edit?usp=sharing" target="_blank">this spreadsheet template</a>. Then, fill in the match list with scores (without penalties) on the first sheet (Match List) and see the values appear on the second sheet (OPR, CCWM)! Do not edit the third sheet (Table). It is for calculation purposes.</p>
       <p class="lead">Please <a href="contact" target="_blank">contact us</a> if you find any bugs or have any questions.</p>
@@ -219,5 +221,7 @@ nav {
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Nice scrolling -->
 <script src="js/scrolling.js"></script>
+<!---Explanation link -->
+<script src="bootstrap/js/explanation.js"></script>
 </body>
 <!-- InstanceEnd --></html>
