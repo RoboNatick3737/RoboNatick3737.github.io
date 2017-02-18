@@ -167,9 +167,9 @@ nav {
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">OPR and CCWM Calculator<span class="text-muted"></span></h2>
-      <p class="lead">We have programmed a spreadsheet to calculate, given the match list and match scores, the OPR and CCWM for each team.
-      <!--<a "explanation_link">What are OPR and CCWM?</a>-->
-      <ul class="lead" id="explanation">
+      <p class="lead">We have programmed a spreadsheet to calculate, given the match list and match scores, the OPR and CCWM for each team.</p>
+      <p class="lead">What are OPR and CCWM? <a id="explanation_link" href="javascript:toggle();">(Show)</a>
+      <ul class="lead" id="explanation" style="display: none">
           <li>OPR (Offensive Power Rating): How many points, on average, the team scores</li>
           <ul>
               <li>Large OPR: Good (the team generally scores a lot of points)</li>
@@ -222,6 +222,19 @@ nav {
 <!-- Nice scrolling -->
 <script src="js/scrolling.js"></script>
 <!---Explanation link -->
-<script src="bootstrap/js/explanation.js"></script>
+<script language="javascript"> 
+function toggle() {
+	var ele = document.getElementById("explanation");
+	var text = document.getElementById("explanation_link");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "(Show)";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "(Hide)";
+	}
+} 
+</script>
 </body>
 <!-- InstanceEnd --></html>
