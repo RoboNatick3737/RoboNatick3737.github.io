@@ -157,6 +157,53 @@ nav {
   </div>
   <div>
   <!-- START THE FEATURETTES -->
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Tour of Draper Laboratory <span class="text-muted">(February 24, 2017)</span></h2>
+      <p class="lead">We really enjoyed our tour of <a href="http://draper.com/" target="_blank">Draper Laboratory</a> in Cambridge. We learned about their amazing projects in space exploration. They are most famous for their navigation and guidance systems, and developed the first digital control system for Apollo. We saw the actual navigation station and flight computer from Apollo. They also told us about their ongoing projects and the science behind them. We were intrigued by the amazing precision of their products. Finally, they discussed their work in intelligence and biomedical engineering. Overall, we learned a lot about the real engineering world and had a ton of fun!</p>
+      <p><img width = "300px" src="images/outreach/draper/draper.png" alt="Draper logo" ></p>
+    </div>
+    <div class="col-md-5">
+<div id="slider6" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/draper/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic5.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel6" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/draper/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/draper/pic5.jpg" />
+    </li>
+  </ul>
+</div>
+ </div></div>
+<hr class="featurette-divider"> 
 <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Natick Days <span class="text-muted">(September 10, 2016)</span></h2>
@@ -390,13 +437,6 @@ nav {
   </ul>
 </div>
   </div>  </div>
-  <hr class="featurette-divider"> 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Tour of Draper Laboratory <span class="text-muted">(February 23, 2017)</span></h2>
-      <p class="lead">We are looking forward to our tour of <a href="http://draper.com/" target="_blank">Draper Laboratory</a> in Cambridge. We are very interested in learning about their work in engineering!</p>
-    </div>
-    <div class="col-md-5"> <img width = "100%" class="featurette-image img-responsive center-block" src="images/outreach/draper/draper.png" alt="Draper logo" style="border:1px solid black"> </div></div>
   <hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
@@ -575,5 +615,34 @@ nav {
       });
     });
   </script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel6').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider6'
+      });
+
+      $('#slider6').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel6",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
 </body>
 <!-- InstanceEnd --></html>
