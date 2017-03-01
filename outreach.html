@@ -159,6 +159,59 @@ nav {
   <!-- START THE FEATURETTES -->
   <div class="row featurette">
     <div class="col-md-7">
+      <h2 class="featurette-heading">Tour of IPG Photonics <span class="text-muted">(February 28, 2017)</span></h2>
+      <p class="lead">Our tour of <a href="http://www.ipgphotonics.com/" target="_blank">IPG Photonics</a> was amazing! We learned all about their work in lasers. First, they showed us a laser projector that they are working on and explained the science behind it. For their lasers, they use glass fiber in combination with elements, such as Ytterbium. This material is much smaller, cheaper, and more reliable than solid state lasers. Therefore, though the lasers cost 0.5-1 million, they are worth the investment. In addition, their projector has an impressive difference in quality with normal projectors. They are also working on a femtosecond laser and hope to start manufacturing these soon. Finally, we saw a really cool robotic arm that they are using for their work. Overall, we learned a lot and saw many intriguing machines!</p>
+      <p><img width = "300px" src="images/outreach/ipg/ipglogo.png" alt="Draper logo" ></p>
+    </div>
+    <div class="col-md-5">
+<div id="slider7" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/ipg/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic6.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel7" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/ipg/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/ipg/pic6.jpg" />
+    </li>
+  </ul>
+</div>
+ </div></div>
+<hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
       <h2 class="featurette-heading">Tour of Draper Laboratory <span class="text-muted">(February 24, 2017)</span></h2>
       <p class="lead">We really enjoyed our tour of <a href="http://draper.com/" target="_blank">Draper Laboratory</a> in Cambridge. We learned about their amazing projects in space exploration. They are most famous for their navigation and guidance systems, and developed the first digital control system for Apollo. We saw the actual navigation station and flight computer from Apollo. They also told us about their ongoing projects and the science behind them. We were intrigued by the amazing precision of their products. Finally, they discussed their work in intelligence and biomedical engineering. Overall, we learned a lot about the real engineering world and had a ton of fun!</p>
       <p><img width = "300px" src="images/outreach/draper/draper.png" alt="Draper logo" ></p>
@@ -429,15 +482,16 @@ nav {
       <img src="images/outreach/stemcamp/pic8.jpg" />
     </li>
   </ul>
-</div>
-  </div>  </div>
-  <hr class="featurette-divider">
+</div></div>  </div>
+<hr class="featurette-divider">
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Tour of IPG Photonics <span class="text-muted">(February 28, 2017)</span></h2>
-      <p class="lead">We have also set up a tour for our team at <a href="http://www.ipgphotonics.com/" target="_blank">IPG Photonics</a>. We are excited to learn about their advancements in fiber lasers!</p>
+      <h2 class="featurette-heading">Robot Demo and Workshop at Wilson Middle School <span class="text-muted"></span></h2>
+      <p class="lead">We are working on scheduling a robotics demo at one of our local middle schools. We hope that this will get more kids into robotics, and hopefully convince them to join RoboNatick next year!</p>
     </div>
-    <div class="col-md-5"> <img width = "100%" class="featurette-image img-responsive center-block" src="images/outreach/ipg/ipglogo.png" alt="IPG logo" style="border:1px solid black; padding: 2px"> </div></div>
+    <div class="col-md-5"></div>
+  </div> 
+  
   <!-- /END THE FEATURETTES -->
 </div>
   
@@ -637,6 +691,35 @@ nav {
       });
     });
   </script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel7').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider7'
+      });
+
+      $('#slider7').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel7",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
 
 </body>
 <!-- InstanceEnd --></html>
