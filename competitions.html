@@ -164,7 +164,8 @@ nav {
       <p class="lead">Our Qualifier at Andover was very good. Our robot was consistent in tele-op, scoring 8-10 particles in the corner vortex and getting the beacons quickly. Autonomous also worked well, hitting the cap ball and scoring 2 particles in the corner vortex. We finished in 5th place in the Qualifying Round and made it to the Semifinals. We won the Connect Award for our outreach and will be advancing to the State Championships!</p>
     </div>
 
-    <div class="col-md-5"> <div id="slider2" class="flexslider">
+    <div class="col-md-5">
+<div id="slider2" class="flexslider">
   <ul class="slides">
     <li>
       <img src="images/competitions/andover/pic1.jpg" />
@@ -270,10 +271,42 @@ nav {
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">State Championships <span class="text-muted">at Natick High School (March 4, 2017)</span></h2>
-      <p class="lead">States was an amazing and thrilling competition. We won our first three qualifying matches. In these matches, our autonomous worked very well, pressing both beacons, and we were able to shoot a good number of particles into the center vortex during tele-op. Unfortunately, due to some technical difficulties, we lost our fourth match. Our fifth match was very close, and we lost by only 1 point! We were selected for one of the alliances for the elimination round, but lost in the semifinals. However, at the very end, we won the Inspire Award for all of our hard work and will be advancing to Super-Regionals! Watch our Team Video:</p>
-      <!---<p class="lead">See our States team video <a href="https://vimeo.com/203654359" target="_blank">here</a>.</p>-->
+      <p class="lead">States was an amazing and thrilling competition. We won our first three qualifying matches. In these matches, our autonomous worked very well, pressing both beacons, and we were able to shoot a good number of particles into the center vortex during tele-op. Unfortunately, due to some technical difficulties, we lost our fourth match. Our fifth match was very close, and we lost by only 1 point! We were selected for one of the alliances for the elimination round, but lost in the semifinals. However, at the very end, we won the Inspire Award for all of our hard work and will be advancing to Super-Regionals!</p>
+      <p class="lead">See our States team video <a href="https://vimeo.com/203654359" target="_blank">here</a>.</p>
     </div>
-    <div class="col-md-5"> <iframe src="https://player.vimeo.com/video/203654359" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <div class="col-md-5">
+<div id="slider3" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/states/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic4.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel3" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/states/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/states/pic4.jpg" />
+    </li>
+  </ul>
+</div>    </div>
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
@@ -365,6 +398,34 @@ nav {
         }
       });
     });
-  </script>
+  </script>
+
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel3').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider3'
+      });
+
+      $('#slider3').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel3",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 <!-- InstanceEnd --></html>
