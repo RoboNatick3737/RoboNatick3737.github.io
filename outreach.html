@@ -159,6 +159,34 @@ nav {
   <!-- START THE FEATURETTES -->
   <div class="row featurette">
     <div class="col-md-7">
+      <h2 class="featurette-heading">Hosting MA State Championship <span class="text-muted">(March 3-4, 2017)</span></h2>
+      <p class="lead">Along with the other RoboNatick teams, for the third year in a row, we helped host States at Natick High School! The evening before, we stayed late to help MassFTC put together and set up the competition and practice fields. We also helped set up the tables in the pit area. On the Natick Robotics YouTube page, we had a <a href="https://www.youtube.com/watch?v=Qx2cxO2TMeQ" target="_blank">live stream of the event</a>. After the event, we stayed late to clean up the gym and help pack up the materials. Overall, it went very well, and we were honored to have this opportunity to work closely with FTC.</p>
+    </div>
+    <div class="col-md-5">
+<div id="slider8" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/states/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/states/pic2.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel8" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/states/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/states/pic2.jpg" />
+    </li>
+  </ul>
+</div>
+ </div></div>
+<hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
       <h2 class="featurette-heading">Tour of IPG Photonics <span class="text-muted">(February 28, 2017)</span></h2>
       <p class="lead">Our tour of <a href="http://www.ipgphotonics.com/" target="_blank">IPG Photonics</a> was amazing! We learned all about their work in lasers. First, they showed us a laser projector that they are working on and explained the science behind it. For their lasers, they use glass fiber in combination with elements, such as Ytterbium. This material is much smaller, cheaper, and more reliable than solid state lasers. Therefore, though the lasers cost 0.5-1 million, they are worth the investment. In addition, their projector has an impressive difference in quality with normal projectors. They are also working on a femtosecond laser and hope to start manufacturing these soon. Finally, we saw a really cool robotic arm that they are using for their work. Overall, we learned a lot and saw many intriguing machines!</p>
       <p><img width = "300px" src="images/outreach/ipg/ipglogo.png" alt="Draper logo" ></p>
@@ -720,6 +748,33 @@ nav {
     });
   </script>
 
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel8').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider8'
+      });
+
+      $('#slider8').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel8",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 
 </body>
 <!-- InstanceEnd --></html>
