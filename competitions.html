@@ -152,6 +152,71 @@ nav {
 <!-- START THE FEATURETTES -->
   <div class="row featurette">
     <div class="col-md-7">
+      <h2 class="featurette-heading">East Super-Regional Championship <span class="text-muted">at The University of Scranton in Scranton, PA (March 17-19, 2016)</span></h2>
+      <p class="lead">Super-Regionals had its ups and downs. In the Qualification round, due to some complications with our alliance partners' autonomous, we were only able to win 3 matches out of 9. This put us in 24th place. However, due to the compatibility of our robot and autonomous programs with other teams, we were picked by 5484 Enderbots, the 4th seed, for their alliance. We took out the 1st seeded alliance in the semifinals and the 2nd seeded alliance in the finals, and won the Tesla Division! Though we lost in the overall finals, we will be advancing to the FIRST Championship!</p>
+    </div>
+
+    <div class="col-md-5">
+<div id="slider4" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/supers/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic7.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic8.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel4" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/supers/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic7.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/supers/pic8.jpg" />
+    </li>
+  </ul>
+</div>    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
       <h2 class="featurette-heading">State Championships <span class="text-muted">at Natick High School (March 4, 2017)</span></h2>
       <p class="lead">States was an amazing and thrilling competition. We won our first three qualifying matches. In these matches, our autonomous worked very well, pressing both beacons, and we were able to shoot a good number of particles into the center vortex during tele-op. Unfortunately, due to some technical difficulties, we lost our fourth match. Our fifth match was very close, and we lost by only 1 point! We were selected for one of the alliances for the elimination round, but lost in the semifinals. However, at the very end, we won the Inspire Award for all of our hard work and will be advancing to Super-Regionals!</p>
     </div>
@@ -327,9 +392,9 @@ nav {
   </div>
   <hr class="featurette-divider">
   <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">East Super-Regional Championship <span class="text-muted">at The University of Scranton in Scranton, PA (March 17-19, 2016)</span></h2>
-      <p class="lead">We are very excited for this upcoming event, and hope to qualify for the FIRST Championship!</p>
+    <div class="col-md-12">
+      <h2 class="featurette-heading">FIRST Championship <span class="text-muted">in St. Louis, MO (April 26-29, 2017)</span></h2>
+      <p class="lead">We are honored to have advanced to the FIRST Championship, and are looking forward to competing and seeing all of the amazing teams!</p>
     </div>
     <div class="col-md-5"> </div>
   </div>
@@ -443,6 +508,32 @@ nav {
         }
       });
     });
-  </script>
+  </script><script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel4').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider4'
+      });
+
+      $('#slider4').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel4",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 <!-- InstanceEnd --></html>
