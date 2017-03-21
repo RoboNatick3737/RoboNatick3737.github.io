@@ -16,6 +16,8 @@
 
 <link href="css/style.css" rel="stylesheet">
 
+<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" >
+
 <!-- Page description -->
 <meta name="description" content="RoboNatick 3737: Hank's Tanks. High school FTC robotics team from Natick High School in Massachusetts.">
 
@@ -133,7 +135,7 @@
 .sponsors-div a img:hover {
     opacity: 0.7;
 }
-
+.flip-clock-wrapper ul li a div div.inn, .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } .flip-clock-dot, .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } .flip-clock-wrapper .flip-clock-meridium a, .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -325,14 +327,16 @@
       <p>January 22, 2017: Qualifier at Gann Academy</p>
       <ul><li>8<sup>th</sup> place, finals</li></ul>
       <p>March 4, 2017: State Championships at Natick High School</p>
-      <ul><li>11<sup>th</sup> place, semifinals</li>
+      <ul><li>13<sup>th</sup> place, semifinals</li>
       <li>Inspire Award</li></ul>
       <p>March 17-19, 2017: East Super-Regional Championship at The University of Scranton in Scranton, PA</p>
       <ul><li>Tesla Division Winning Alliance</li></ul>
       <p>April 26-29, 2017: FIRST Championship in St. Louis, MO</p>
       <p><a class="btn btn-default" href="competitions" role="button">More details &raquo;</a></p>
     </div>
-    <div class="col-md-4"> <img class="featurette-image img-responsive center-block" src="images/ftc.png" alt="FTC Logo"> </div>
+    <div class="col-md-4"><img class="featurette-image img-responsive center-block" src="images/ftc.png" alt="FTC Logo">
+<p class="lead" style="text-align:center; padding-top: 20px">Countdown to next competition:</p>
+<div class="clock-builder-output" style="padding-left: 15px"></div> </div>
   </div>
   <!-- /.row --> 
 </div>
@@ -398,5 +402,33 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <!-- Nice scrolling -->
 <script src="js/scrolling.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="clock_assets/flipclock.js"></script>
+<script type="text/javascript" src="clock_assets/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'DailyCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 1493208000 - ((new Date().getTime())/1000); // from: 04/26/2017 06:00 am -0600
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
+<!-- Countdown from: http://www.dwuser.com/education/content/easy-javascript-jquery-countdown-clock-builder/ -->
 </body>
 </html>
