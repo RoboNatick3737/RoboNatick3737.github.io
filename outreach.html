@@ -159,6 +159,56 @@ nav {
   <!-- START THE FEATURETTES -->
   <div class="row featurette">
     <div class="col-md-7">
+      <h2 class="featurette-heading">Cambridge Science Carnival & Robot Zoo Booth <span class="text-muted">(April 15, 2017)</span></h2>
+      <p class="lead">	In order to further spread the word of FIRST, we, along with Team Infinity, The Parity Bits, The Brainstormers, Gluten Free, We Are Robo, and Canton Robodogs, set up a booth at the <a href="https://www.cambridgesciencefestival.org/current-festival/science-carnival-robot-zoo/" target="_blank">Cambridge Science Carnival and Robot Zoo</a>. At the event, we demonstrated the robot, explained how it works, and described what our team does. Many people came by and asked questions, and seemed very interested in our work. It was a lot of fun, and we hope to collaborate with other teams again sometime in the future.</p>
+    </div>
+    <div class="col-md-5">
+<div id="slider9" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/carnival/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic4.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel9" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/outreach/carnival/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/outreach/carnival/pic4.jpg" />
+    </li>
+  </ul>
+</div>
+ </div></div>
+  </div>
+<hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Morse Institute Library Showcase 2017 <span class="text-muted">(April 5, 2017)</span></h2>
+      <p class="lead">To continue spreading the word of FIRST and inspiring children to join their local robotics team, we demonstrated our robot at the Morse Institute Library in Natick. We worked closely with the librarians to figure out how we could effectively create a successful evening. The event was open to the public, and we had many children show up to the event (it was very loud!). We let the visitors shoot into the center vortex and drive the robot around. We also saw an engineer from Mathworks, and explained the workings of our robot to him. He gave us some very helpful tips for potential improvements on the robot.
+</p>
+    </div>
+    <div class="col-md-5"></div>
+  </div>
+<hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
       <h2 class="featurette-heading">Hosting MA State Championship <span class="text-muted">(March 3-4, 2017)</span></h2>
       <p class="lead">Along with the other RoboNatick teams, for the third year in a row, we helped host States at Natick High School! The evening before, we stayed late to help MassFTC put together and set up the competition and practice fields. We also helped set up the tables in the pit area. On the Natick Robotics YouTube page, we had a <a href="https://www.youtube.com/watch?v=Qx2cxO2TMeQ" target="_blank">live stream of the event</a>. After the event, we stayed late to clean up the gym and help pack up the materials. Overall, it went very well, and we were honored to have this opportunity to work closely with FTC.</p>
     </div>
@@ -518,22 +568,6 @@ nav {
   </div>
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Morse Institute Library Showcase 2017 <span class="text-muted">(April 5, 2017)</span></h2>
-      <p class="lead">We have been coordinating another showcase at the Morse Institute Library, based on the success of last year's event. We are looking forward to demonstrating our robot and advertising FIRST.</p>
-    </div>
-    <div class="col-md-5"></div>
-  </div>
-<hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Cambridge Science Carnival & Robot Zoo Booth <span class="text-muted">(April 15, 2017)</span></h2>
-      <p class="lead">We were honored to be invited by 8644 The Brainstormers to help out with a booth at the <a href="https://www.cambridgesciencefestival.org/current-festival/science-carnival-robot-zoo/" target="_blank">Cambridge Science Carnival and Robot Zoo</a>. We are excited to advertise FIRST to the community and demonstrate our robot.</p>
-    </div>
-    <div class="col-md-5"></div>
-  </div>
-<hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
       <h2 class="featurette-heading">Cub Scouts Visit <span class="text-muted"></span></h2>
       <p class="lead">We are also in contact with Cub Scouts to coordinate a visit to our shop for them. It would be a great opportunity to advertise our work, and we are looking forward to it!</p>
     </div>
@@ -546,7 +580,6 @@ nav {
       <p class="lead">We are working on scheduling a robotics demo at one of our local middle schools. We hope that this will get more kids into robotics, and hopefully convince them to join RoboNatick next year!</p>
     </div>
     <div class="col-md-5"></div>
-  </div>
 
   
   <!-- /END THE FEATURETTES -->
@@ -798,6 +831,34 @@ nav {
         animationLoop: false,
         slideshow: false,
         sync: "#carousel8",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel9').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider9'
+      });
+
+      $('#slider9').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel9",
         start: function(slider){
           $('body').removeClass('loading');
         }
