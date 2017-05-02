@@ -152,6 +152,94 @@ nav {
 <!-- START THE FEATURETTES -->
   <div class="row featurette">
     <div class="col-md-7">
+            <h2 class="featurette-heading">FIRST Championship <span class="text-muted">in St. Louis, MO (April 26-29, 2017)</span></h2>
+      <p class="lead">The FIRST Championship was the best experience we have ever had as a team. The venue was amazing, with its light and fire shows, and St. Louis was great to explore. We even got the chance to see the Gateway Arch! Though we did not perform as we would have liked, winning only 5 out of our 9 matches and finishing in 31st place in our division, we were honored to have advanced in the first place and had a ton of fun. We met many great people and saw many amazing robots, and are glad we got the opportunity to come. The traditional FTC season has now ended, and we hope to return next year (to Detroit)!</p>
+    </div>
+    <div class="col-md-5">
+<div id="slider5" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/worlds/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic7.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic8.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic9.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic10.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic11.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic12.jpg" />
+    </li>
+  </ul>
+</div>
+<div id="carousel5" class="flexslider c">
+  <ul class="slides">
+    <li>
+      <img src="images/competitions/worlds/pic1.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic2.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic3.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic4.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic5.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic6.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic7.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic8.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic9.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic10.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic11.jpg" />
+    </li>
+    <li>
+      <img src="images/competitions/worlds/pic12.jpg" />
+    </li>
+  </ul>
+</div>    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
       <h2 class="featurette-heading">East Super-Regional Championship <span class="text-muted">at The University of Scranton in Scranton, PA (March 17-19, 2016)</span></h2>
       <p class="lead">Super-Regionals had its ups and downs. In the Qualification round, due to some complications with our alliance partners' autonomous, we were only able to win 3 matches out of 9. This put us in 24th place. However, due to the compatibility of our robot and autonomous programs with other teams, we were picked by 5484 Enderbots, the 4th seed, for their alliance. We took out the 1st seeded alliance in the semifinals and the 2nd seeded alliance in the finals, and won the Tesla Division! Though we lost in the overall finals, we will be advancing to the FIRST Championship!</p>
     </div>
@@ -390,14 +478,6 @@ nav {
     </div>
     <div class="col-md-5"> <img src="images/competitions/dartmouth/team.jpg" width="100%" alt="Dartmouth team"> </div>
   </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-12">
-      <h2 class="featurette-heading">FIRST Championship <span class="text-muted">in St. Louis, MO (April 26-29, 2017)</span></h2>
-      <p class="lead">We are honored to have advanced to the FIRST Championship, and are looking forward to competing and seeing all of the amazing teams!</p>
-    </div>
-    <div class="col-md-5"> </div>
-  </div>
   
   <!-- /END THE FEATURETTES --> 
   
@@ -529,6 +609,34 @@ nav {
         animationLoop: false,
         slideshow: false,
         sync: "#carousel4",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel5').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 110,
+        itemMargin: 5,
+        asNavFor: '#slider5'
+      });
+
+      $('#slider5').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel5",
         start: function(slider){
           $('body').removeClass('loading');
         }
