@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="shortcut icon" type="image/png" href="images/tank_icon.png" style="border-radius: 10px;"/>
+<title>3737 Hank's Tanks | Home</title>
+
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Carousel -->
+<link href="bootstrap/css/carousel.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" >
+
+<!-- Page description -->
+<meta name="description" content="RoboNatick 3737: Hank's Tanks. High school FTC robotics team from Natick High School in Massachusetts.">
+
+<!-- Search engine keywords -->
+<meta name="keywords" content="natick, robotics, FTC, robonatick, hank, tank, hanks, tanks, 3737">
+ 
+<style type="text/css">
+@media only screen and (max-width: 480px) {
+.carousel-caption h1 {
+	font-size: 18px;
+}
+.featurette-divider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.featurette-heading {
+	margin-top: 20px;
+}
+#about-heading {
+	margin-top: 0px;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+.carousel-caption h1 {
+	font-size: 23px;
+}
+.featurette-divider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.featurette-heading {
+	margin-top: 20px;
+}
+#about-heading {
+	margin-top: 0px;
+}
+.developers-heading {
+	margin-top: 40px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.featurette-heading {
+	margin-top: 40px;
+	font-size: 35px;
+}
+#about-heading {
+	margin-top: 0px;
+}
+.developers-heading {
+	margin-top: 40px;
+}
+.featurette-divider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+}
+#developers-heading {
+	margin-top: 0px;
+	padding-bottom: 30px;
+}
+.col-lg-6 {
+	padding-top: 20px;
+}
+.navbar-wrapper {
+	position: fixed;
+	border-radius: 0px;
+}
+.col-md-5 img {
+	margin-top: 40px;
+	float: bottom;
+}
+.navigation * {
+	border-radius: 0 !important;
+}
+#share-buttons img {
+	width: 35px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 0;
+	display: inline;
+}
+.navigation * {
+  background-color: orange;
+}
+.col-md-4 {
+	max-width: 400px;
+}
+.col-md-4 img {
+	width: 100%;
+}
+#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a, #dd a, #finalrobot a, #resources a, #pastSeasons a {
+	font-weight: bold;
+	color: #3f3f3f;
+}
+#home a {
+	font-weight: bold;
+	color: #FFF;
+}
+#home a:hover {
+	opacity: 1.0;
+}
+#dd a:focus {
+	background-color: #E59400;
+}
+.navbar-wrapper .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.logo {
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.sponsors-div a img:hover {
+    opacity: 0.7;
+}
+.flip-clock-wrapper ul li a div div.inn, .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } .flip-clock-dot, .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } .flip-clock-wrapper .flip-clock-meridium a, .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<a name="top"></a>
+<!-- Navbar -->
+<div class="navbar-wrapper">
+    <div class="container navigation">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="/" id="main_link" ><img style="float:left; padding-right: 5px" height="89%" src="images/nav_icon.png">Hank's Tanks</a> </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li id="home"><a href="/">Home</a></li>
+	      <li id="dd" class="dropdown"> <a id="robots" href="https://robonatick3737.github.io/index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Robots<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li id="robot"><a style="background-color: orange;" href="preliminary_robot">Preliminary Robot</a></li>
+                  <li id="finalrobot"><a style="background-color: orange;" href="final_robot">Final Robot</a></li>
+                </ul>
+              </li>
+	      <li id="competitions"><a href="competitions">Competitions</a></li>
+	      <li id="team"><a href="team">Team</a></li>
+	      <li id="outreach"><a href="outreach">Outreach</a></li>
+	      <li id="resources"><a href="resources">Resources</a></li>
+	      <li id="contact"><a href="contact">Contact Us</a></li>
+	      <li id="pastSeasons"><a href="https://robonatick3737.github.io/">Latest Season</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+  <!-- Indicators -->
+  <!--<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+    <li data-target="#myCarousel" data-slide-to="6"></li>
+    <li data-target="#myCarousel" data-slide-to="7"></li>
+    <li data-target="#myCarousel" data-slide-to="8"></li>
+    <li data-target="#myCarousel" data-slide-to="9"></li>
+    <li data-target="#myCarousel" data-slide-to="10"></li>
+    <li data-target="#myCarousel" data-slide-to="11"></li>
+    <li data-target="#myCarousel" data-slide-to="12"></li>
+    <li data-target="#myCarousel" data-slide-to="13"></li>
+  </ol>-->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active"> <img class="first-slide" src="images/slideshow/img1.jpg" alt="First slide" width="100%">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="second-slide" src="images/slideshow/img2.jpg" alt="Second slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="third-slide" src="images/slideshow/img3.jpg" alt="Third slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="fourth-slide" src="images/slideshow/img4.jpg" alt="Fourth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="fifth-slide" src="images/slideshow/img5.jpg" alt="Fifth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="sixth-slide" src="images/slideshow/img6.jpg" alt="Sixth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="seventh-slide" src="images/slideshow/img7.jpg" alt="Seventh slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="eighth-slide" src="images/slideshow/img8.jpg" alt="Eighth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="ninth-slide" src="images/slideshow/img9.jpg" alt="Ninth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="tenth-slide" src="images/slideshow/img10.jpg" alt="Tenth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="eleventh-slide" src="images/slideshow/img11.jpg" alt="Eleventh slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="twelth-slide" src="images/slideshow/img12.jpg" alt="Twelth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="thirteenth-slide" src="images/slideshow/img13.jpg" alt="Thirteenth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+    <div class="item"> <img class="fourteenth-slide" src="images/slideshow/img14.jpg" alt="Fourteenth slide">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+<!-- /.carousel --> 
+
+<!-- Two columns of text below the carousel with overview information -->
+<div class="container marketing">
+  <div class="row">
+    <div class="col-lg-11">
+      <h2 class="featurette-heading" id = "first-heading">Who are we?</h2>
+      <p class="lead" >We are one of three <a href="http://www.firstinspires.org/" target="_blank">FIRST</a> Tech Challenge (<a href="http://www.firstinspires.org/robotics/ftc" target="_blank">FTC</a>) Robotics Teams from Natick High School in Massachusetts, but compete individually. Our name was inspired by Henry Haugland, who had served as a close friend and mentor to the Natick Robotics team before we joined FTC. After enrolling, we named the team after him in honor of his years of support. Recently, we have been fairly successful. In the 2013-2014 season, we advanced to the <a href="http://www.ftceast.org/teams/2013-2014-teams" target="_blank">FTC East Super Regionals</a>, but did not continue on. During the 2014-2015 season, we reached States, but lost during the semifinals without advancing. Last year, we won the Think Award at States, allowing us to advance to <a href="http://www.ftceast.org/teams/2016-2017-teams" target="_blank">Super Regionals</a> once again! Unfortunately, we were not able to advance past Super Regionals last year, but made it to the <a href="https://www.firstchampionship.org/st-louis-home" target="_blank">FIRST Championship</a> this year, and had a ton of fun!</p>
+      <p class="lead" style="margin-bottom: 5px" >Read about us in the news:</p>
+      <ul class="lead"><li><a href="http://natick.wickedlocal.com/news/20170328/natick-high-school-robotics-team-advances-to-world-championship" target="_blank">Wicked Local - Natick (3/28/17)</a></li>
+      <li><a href="http://www.nbcboston.com/news/local/Mass-Students-Competing-in-National-Tech-Competition-420517253.html" target="_blank">NBC Boston (4/26/17)</a></li></ul>
+      <p><a class="btn btn-default" href="team" role="button">More details &raquo;</a></p>
+    </div>
+  </div>
+  <!-- /.row --> 
+</div>
+<div class="container marketing">
+<hr class="featurette-divider">
+  <div class="row">
+    <div class="col-lg-8 lead">
+      <h2 class="featurette-heading" id = "about-heading">Competition Schedule</h2>
+      <p>November 19, 2016: Scrimmage at Dartmouth High School</p>
+      <ul><li>1<sup>st</sup> place</li></ul>
+      <p>December 11, 2016: Qualifier at Andover High School</p>
+      <ul><li>5<sup>th</sup> place, semifinals</li>
+      <li>Connect Award</li></ul>
+      <p>January 22, 2017: Qualifier at Gann Academy</p>
+      <ul><li>8<sup>th</sup> place, finals</li></ul>
+      <p>March 4, 2017: State Championships at Natick High School</p>
+      <ul><li>13<sup>th</sup> place, semifinals</li>
+      <li>Inspire Award</li></ul>
+      <p>March 17-19, 2017: East Super-Regional Championship at The University of Scranton in Scranton, PA</p>
+      <ul><li>Tesla Division Winning Alliance</li></ul>
+      <p>April 26-29, 2017: FIRST Championship in St. Louis, MO</p>
+      <ul><li>31<sup>st</sup> place in Ochoa Division</li></ul>
+      <p><a class="btn btn-default" href="competitions" role="button">More details &raquo;</a></p>
+    </div>
+    <div class="col-md-4"><img style="padding-left: 9px" class="featurette-image img-responsive center-block" src="images/ftc.png" alt="FTC Logo">
+<!----<p class="lead" style="text-align:left; padding-left: 13px; padding-top: 20px">Countdown to next competition:</p>
+<div class="clock-builder-output"></div>---> </div>
+  </div>
+  <!-- /.row --> 
+</div>
+
+
+<div class="container marketing">
+<hr class="featurette-divider">
+  <div class="row">
+    <div class="col-lg-8">
+      <h2 class="featurette-heading" id = "about-heading">This Season's Challenge: Velocity Vortex!</h2>
+      <p class="lead">For the 2016-2017 FTC season, the challenge is called Velocity Vortex. Watch the embedded video for more information on the game.</p>
+      <p><a class="btn btn-default" href="http://www.firstinspires.org/resource-library/ftc/game-and-season-info" role="button" target="_blank">More details &raquo;</a></p>
+    </div>
+    <div class="col-md-4"> <iframe width="100%" height="230px" src="https://www.youtube.com/embed/wqASwcqdM6o?rel=0" frameborder="0" allowfullscreen></iframe> </div>
+  </div>
+  <!-- /.row --> 
+</div>
+
+<div class="container marketing">
+<hr class="featurette-divider">
+  <div class="row">
+    <div class="col-lg-12 sponsors-div">
+      <h2 class="featurette-heading" id = "about-heading">Thank you to our sponsors!</h2>
+      <a href="http://www.ptc.com/" target="_blank"><img class="logo" src="images/sponsors/ptc.png" height="60px" alt="PTC Logo"></a>
+      <a href="https://www.bose.com/en_us/index.html" target="_blank"><img class="logo" src="images/sponsors/bose.png" height="60px" alt="Bose Logo"></a>
+      <a href="http://www.cognex.com/" target="_blank"><img class="logo" src="images/sponsors/cognex.png" height="60px" alt="Cognex Logo"></a>
+      <a href="https://www.leidos.com/" target="_blank"><img class="logo" src="images/sponsors/leidos.png" height="60px" alt="Leidos Logo"></a>
+      <a href="http://www.lolasnatick.com/" target="_blank"><img class="logo" src="images/sponsors/lolas.png" height="60px" alt="Lola's Logo"></a>
+      <a href="http://www.natickps.org/" target="_blank"><img class="logo" src="images/sponsors/natickps.png" height="60px" alt="Natick PS Logo"></a>
+      <img class="logo" src="images/sponsors/ndep.png" height="60px" alt="NDEP Logo">
+      <a href="http://www.natickedfoundation.org/" target="_blank"><img class="logo" src="images/sponsors/nef.png" height="60px" alt="NEF Logo"></a>
+      <a href="https://www.army.mil/info/organization/natick" target="_blank"><img class="logo" src="images/sponsors/nssc.png" height="60px" alt="NSSC Logo"></a>
+      <a href="http://www.piercecollision.com/" target="_blank"><img class="logo" src="images/sponsors/piercec.png" height="60px" alt="Pierce Collision Logo"></a>
+      <a href="http://www.triconsportsinc.com/" target="_blank"><img class="logo" src="images/sponsors/tricon.png" height="60px" alt="Tricon Sports Logo"></a>
+      <a href="http://www.webreply.com/" target="_blank"><img class="logo" src="images/sponsors/webreply.png" height="60px" alt="WebReply Logo"></a>
+      <a href="http://www.salmonhealth.com/locations/natick/whitney-place/" target="_blank"><img class="logo" src="images/sponsors/whitney.png" height="60px" alt="Whitney Place Logo"></a>
+      <a href="http://www.staples.com/" target="_blank"><img class="logo" src="images/sponsors/staples.png" height="60px" alt="Staples Logo"></a>
+    </div>
+  </div>
+  <!-- /.row --> 
+</div>
+
+
+<!-- Three columns of text below the carousel -->
+<div class="container marketing">
+  <hr class="featurette-divider">
+  
+  <!-- FOOTER -->
+  <footer>
+  <div id="share-buttons">
+    <a href="mailto:ftc3737@gmail.com"><img src="images/socialmedia/email.png" alt="Email" /></a>
+    <a href="https://twitter.com/3737hankstanks" target="_blank"><img src="images/socialmedia/twitter.png" alt="Twitter" /></a>
+    <a href="https://www.instagram.com/ftc3737" target="_blank"><img src="images/socialmedia/instagram.png" alt="Instagram" /></a>
+    <a href="https://www.youtube.com/channel/UCUkntPWY0UKNabeFXzWi7jQ" target="_blank"><img src="images/socialmedia/youtube.png" alt="YouTube" /></a>
+  </div>
+    <p class="pull-right" style="padding-top:8px"><a href="#top">Back to top</a></p>
+  </footer>
+</div>
+<!-- /.container -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Nice scrolling -->
+<script src="js/scrolling.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="clock_assets/flipclock.js"></script>
+<script type="text/javascript" src="clock_assets/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'DailyCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 1498312800 - ((new Date().getTime())/1000); // from: 06/24/2017 10:00 am -0400
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
+<!-- Countdown from: http://www.dwuser.com/education/content/easy-javascript-jquery-countdown-clock-builder/ -->
+</body>
+</html>
