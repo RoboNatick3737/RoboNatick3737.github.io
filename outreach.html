@@ -12,6 +12,7 @@
 <title>3737 Hank's Tanks | Outreach</title>
 <!-- InstanceEndEditable -->
 <!-- ../bootstrap core CSS -->
+<link href="css/w3.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
@@ -133,6 +134,17 @@ nav {
 .logo:hover {
     opacity: 0.7;
 }
+.demo:hover, .demo2:hover, .demo3:hover, .demo4:hover, .demo5:hover {
+    opacity: 1.0;
+    -webkit-transition: opacity 0.3s;
+}
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+    -webkit-transition: opacity 0.3s;
+}
+.w3-display-left, .w3-display-right, .w3-badge, .w3-opacity {
+  cursor:pointer;
+  font-size: 30px;
+}
 </style>
 </head>
 
@@ -232,26 +244,29 @@ nav {
       <p class="lead">The Natick Educational Foundation, an organization that collects money to run educational programs in Natick, invited us to present our robots at their November Pi Run. They have sponsored RoboNatick in the past, and invited us to demonstrate our robots for a fundraiser of their own. We brought our swerve drive chassis and preliminary robot as well as a few glyphs and a cryptobox to the event to let visitors drive. We talked to visitors about our team and the FIRST system. We even spoke to a few parents who have been interested in starting an FLL JR team for a local elementary school. We also invited our sister teams 6032 and 5436 to the Pi Run to help us out. The event was a success, and we had a lot of fun doing it.</p>
     </div>
     <div class="col-md-5">
-<div id="slider8" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/pirun/pic1.png" />
-    </li>
-    <li>
-      <img src="images/outreach/pirun/pic2.png" />
-    </li>
-  </ul>
+
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs3(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs3(1)">&#10095;</div>
+
+    <img class="mySlides3" src="images/outreach/pirun/pic1.png" style="width:100%">
+    <img class="mySlides3" src="images/outreach/pirun/pic2.png" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo3 w3-opacity" 
+      src="images/outreach/pirun/pic1.png" onclick="currentDiv3(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo3 w3-opacity"
+      src="images/outreach/pirun/pic2.png" onclick="currentDiv3(2)" style="width:100%">
+    </div>
+    </div>
+  </div>
 </div>
-<div id="carousel8" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/pirun/pic1.png" />
-    </li>
-    <li>
-      <img src="images/outreach/pirun/pic2.png" />
-    </li>
-  </ul>
-</div>
+
  </div></div>
 <hr class="featurette-divider">
 <div class="row featurette" id="childrens">
@@ -260,49 +275,45 @@ nav {
       <p class="lead">Boston Children’s Hospital invited us to demonstrate our robot at their fair to encourage STEM in the community.  For 4 hours, we allowed kids to drive the robot around, lifting the cap ball and shooting particles. There were at least 50 kids who drove the robot throughout the day, many of whom seemed very interested about robotics. While the kids were driving our robot, we explained the technology behind our robot to the parents, and described FTC and FIRST. It was a heartwarming experience and a great, fun time.</p>
     </div>
     <div class="col-md-5">
-<div id="slider3" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/hospital/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic6.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel3" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/hospital/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/hospital/pic6.jpg" />
-    </li>
-  </ul>
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs2(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs2(1)">&#10095;</div>
+
+    <img class="mySlides2" src="images/outreach/hospital/pic1.jpg" style="width:100%">
+    <img class="mySlides2" src="images/outreach/hospital/pic2.jpg" style="width:100%">
+    <img class="mySlides2" src="images/outreach/hospital/pic3.jpg" style="width:100%">
+    <img class="mySlides2" src="images/outreach/hospital/pic4.jpg" style="width:100%">
+    <img class="mySlides2" src="images/outreach/hospital/pic5.jpg" style="width:100%">
+    <img class="mySlides2" src="images/outreach/hospital/pic6.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/outreach/hospital/pic1.jpg" onclick="currentDiv2(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity"
+      src="images/outreach/hospital/pic2.jpg" onclick="currentDiv2(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/outreach/hospital/pic3.jpg" onclick="currentDiv2(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/outreach/hospital/pic4.jpg" onclick="currentDiv2(4)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/outreach/hospital/pic5.jpg" onclick="currentDiv2(5)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/outreach/hospital/pic6.jpg" onclick="currentDiv2(6)" style="width:100%">
+    </div>
+  </div>
 </div>
   </div></div>
   <hr class="featurette-divider">
@@ -312,38 +323,38 @@ nav {
       <p class="lead">At the beginning of every school year, Natick hosts a town-wide event called Natick Days. The town common is filled with booths from different organizations trying to advertise themselves and fundraise. Together with the other two RoboNatick teams, we had a booth where we fundraised and a small robot for kids to drive around in order to generate interest in robotics and RoboNatick. This year, we used a simple chassis for people to drive around since our actual robot was at Kickoff. While kids drove the robot, we talked to parents about FIRST and our team, and even talked to some representatives from local companies who came over and expressed interest in us.</p>
     </div>
     <div class="col-md-5">
-<div id="slider5" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/natickdays/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic4.jpg" />
-    </li>
-  </ul>
+
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs(1)">&#10095;</div>
+
+    <img class="mySlides" src="images/outreach/natickdays/pic1.jpg" style="width:100%">
+    <img class="mySlides" src="images/outreach/natickdays/pic2.jpg" style="width:100%">
+    <img class="mySlides" src="images/outreach/natickdays/pic3.jpg" style="width:100%">
+    <img class="mySlides" src="images/outreach/natickdays/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/outreach/natickdays/pic1.jpg" onclick="currentDiv(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity"
+      src="images/outreach/natickdays/pic2.jpg" onclick="currentDiv(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/outreach/natickdays/pic3.jpg" onclick="currentDiv(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/outreach/natickdays/pic4.jpg" onclick="currentDiv(4)" style="width:100%">
+    </div>
+  </div>
 </div>
-<div id="carousel5" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/natickdays/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/natickdays/pic4.jpg" />
-    </li>
-  </ul>
-</div>
+
   </div></div>
   <hr class="featurette-divider">
 <div class="row featurette" id="summercamp">
@@ -352,67 +363,60 @@ nav {
       <p class="lead">One of our longest running outreach events is our annual Land and Sea Robotics Summer Camp. We host a 2-week-long camp for middle schoolers that introduces them to robotics. Our curriculum is divided into two sections. First, we have them build out small ROVs from a kit, and them around in the pond behind the high school. We then move on to using NXTs to build small robots to complete a series of challenges, ending with the kids building sumo bots. With this curriculum, we teach gear ratios (fraction math), torque and angular motion, buoyancy, wiring, and computer programming through project based learning. We have around 20-30 kids participate each year, and this camp is one of our biggest sources of new members.  Every year, many new RoboNatick members join who were once campers at our camp. We will continue this camp for years to come, as it is a central part of the RoboNatick culture.</p>
     </div>
     <div class="col-md-5">
-<div id="slider4" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/landandsea/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic8.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic9.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel4" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/landandsea/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic8.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/landandsea/pic9.jpg" />
-    </li>
-  </ul>
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs4(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs4(1)">&#10095;</div>
+
+    <img class="mySlides4" src="images/outreach/landandsea/pic1.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic2.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic3.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic4.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic5.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic6.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic7.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic8.jpg" style="width:100%">
+    <img class="mySlides4" src="images/outreach/landandsea/pic9.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic1.jpg" onclick="currentDiv4(1)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity"
+      src="images/outreach/landandsea/pic2.jpg" onclick="currentDiv4(2)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic3.jpg" onclick="currentDiv4(3)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic4.jpg" onclick="currentDiv4(4)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic5.jpg" onclick="currentDiv4(5)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic6.jpg" onclick="currentDiv4(6)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic7.jpg" onclick="currentDiv4(7)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic8.jpg" onclick="currentDiv4(8)" style="width:100%">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo4 w3-opacity" 
+      src="images/outreach/landandsea/pic9.jpg" onclick="currentDiv4(9)" style="width:100%">
+    </div>
+  </div>
 </div>
   </div></div>
   <hr class="featurette-divider">
@@ -455,62 +459,57 @@ nav {
       <p class="lead">This was the second year that RoboNatick has held April STEM camp. After reflecting on our mistakes and successes of last year, this year’s camp was much more successful than last year’s already successful camp. The goal of the camp is to engage middle school students early on in STEM and provide a foundation for them that may later guide them in their learning. Each day represented a different branch or branches of STEM.</p>
     </div>
     <div class="col-md-5">
-<div id="slider" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/stemcamp/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic8.jpg" />
-    </li>
-  </ul>
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs6(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs6(1)">&#10095;</div>
+
+    <img class="mySlides6" src="images/outreach/stemcamp/pic1.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic2.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic3.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic4.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic5.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic6.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic7.jpg" style="width:100%">
+    <img class="mySlides6" src="images/outreach/stemcamp/pic8.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic1.jpg" onclick="currentDiv6(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity"
+      src="images/outreach/stemcamp/pic2.jpg" onclick="currentDiv6(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic3.jpg" onclick="currentDiv6(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic4.jpg" onclick="currentDiv6(4)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic5.jpg" onclick="currentDiv6(5)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic6.jpg" onclick="currentDiv6(6)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic7.jpg" onclick="currentDiv6(7)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo6 w3-opacity" 
+      src="images/outreach/stemcamp/pic8.jpg" onclick="currentDiv6(8)" style="width:100%">
+    </div>
+  </div>
 </div>
-<div id="carousel" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/stemcamp/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/stemcamp/pic8.jpg" />
-    </li>
-  </ul>
-</div></div>  </div>
+</div>  </div>
 <hr class="featurette-divider">
  <div class="row featurette" id="library">
     <div class="col-md-7">
@@ -564,40 +563,37 @@ nav {
       <p class="lead">	In order to further spread the word of FIRST, we, along with Team Infinity, The Parity Bits, The Brainstormers, Gluten Free, We Are Robo, and Canton Robodogs, set up a booth at the <a href="https://www.cambridgesciencefestival.org/current-festival/science-carnival-robot-zoo/" target="_blank">Cambridge Science Carnival and Robot Zoo</a>. At the event, we demonstrated the robot, explained how it works, and described what our team does. Many people came by and asked questions, and seemed very interested in our work. It was a lot of fun, and we hope to collaborate with other teams again sometime in the future.</p>
     </div>
     <div class="col-md-5">
-<div id="slider9" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/carnival/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic4.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel9" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/outreach/carnival/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/outreach/carnival/pic4.jpg" />
-    </li>
-  </ul>
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs5(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs5(1)">&#10095;</div>
+
+    <img class="mySlides5" src="images/outreach/carnival/pic1.jpg" style="width:100%">
+    <img class="mySlides5" src="images/outreach/carnival/pic2.jpg" style="width:100%">
+    <img class="mySlides5" src="images/outreach/carnival/pic3.jpg" style="width:100%">
+    <img class="mySlides5" src="images/outreach/carnival/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo5 w3-opacity" 
+      src="images/outreach/carnival/pic1.jpg" onclick="currentDiv5(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo5 w3-opacity"
+      src="images/outreach/carnival/pic2.jpg" onclick="currentDiv5(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo5 w3-opacity" 
+      src="images/outreach/carnival/pic3.jpg" onclick="currentDiv5(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo5 w3-opacity" 
+      src="images/outreach/carnival/pic4.jpg" onclick="currentDiv5(4)" style="width:100%">
+    </div>
+  </div>
 </div>
  </div></div>
-  </div>
 <hr class="featurette-divider">
 <div class="page-header" id="fundraising">
     <h2><!-- InstanceBeginEditable name="Header" -->III. Fundraising<!-- InstanceEndEditable --></h2>
@@ -698,301 +694,170 @@ nav {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
-  <!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
-
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel2').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider2'
-      });
-
-      $('#slider2').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel2",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel3').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider3'
-      });
-
-      $('#slider3').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel3",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel4').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider4'
-      });
-
-      $('#slider4').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel4",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel5').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider5'
-      });
-
-      $('#slider5').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel5",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel6').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider6'
-      });
-
-      $('#slider6').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel6",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel7').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider7'
-      });
-
-      $('#slider7').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel7",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel8').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider8'
-      });
-
-      $('#slider8').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel8",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel9').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider9'
-      });
-
-      $('#slider9').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel9",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-
-<script type="text/javascript">
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-1000
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
-});
-
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#sidebar-scroll a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#sidebar-scroll ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
+function plusDivs(n) {
+  showDivs(slideIndex += n);
 }
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function currentDiv2(n) {
+  showDivs2(slideIndex2 = n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " w3-opacity-off";
+}
+
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+  showDivs3(slideIndex3 += n);
+}
+
+function currentDiv3(n) {
+  showDivs3(slideIndex3 = n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("demo3");
+  if (n > x.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex3-1].style.display = "block";
+  dots[slideIndex3-1].className += " w3-opacity-off";
+}
+
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(n) {
+  showDivs4(slideIndex4 += n);
+}
+
+function currentDiv4(n) {
+  showDivs4(slideIndex4 = n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("demo4");
+  if (n > x.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w4-opacity-off", "");
+  }
+  x[slideIndex4-1].style.display = "block";
+  dots[slideIndex4-1].className += " w4-opacity-off";
+}
+
+var slideIndex5 = 1;
+showDivs5(slideIndex5);
+
+function plusDivs5(n) {
+  showDivs5(slideIndex5 += n);
+}
+
+function currentDiv5(n) {
+  showDivs5(slideIndex5 = n);
+}
+
+function showDivs5(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides5");
+  var dots = document.getElementsByClassName("demo5");
+  if (n > x.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w5-opacity-off", "");
+  }
+  x[slideIndex5-1].style.display = "block";
+  dots[slideIndex5-1].className += " w5-opacity-off";
+}
+
+var slideIndex6 = 1;
+showDivs6(slideIndex6);
+
+function plusDivs6(n) {
+  showDivs6(slideIndex6 += n);
+}
+
+function currentDiv6(n) {
+  showDivs6(slideIndex6 = n);
+}
+
+function showDivs6(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides6");
+  var dots = document.getElementsByClassName("demo6");
+  if (n > x.length) {slideIndex6 = 1}
+  if (n < 1) {slideIndex6 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w6-opacity-off", "");
+  }
+  x[slideIndex6-1].style.display = "block";
+  dots[slideIndex6-1].className += " w6-opacity-off";
+}
+
+
 </script>
 
 </body>
