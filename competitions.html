@@ -11,12 +11,15 @@
 <title>3737 Hank's Tanks | Competitions</title>
 <!-- InstanceEndEditable -->
 <!-- Bootstrap -->
+<link href="css/w3.css" rel="stylesheet">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Carousel -->
 <link href="bootstrap/css/carousel.css" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
 <!-- Page description -->
 <meta name="description" content="RoboNatick 3737: Hank's Tanks. Competitions. Descriptions and pictures of our team's competitions throughout the season.">
@@ -90,6 +93,17 @@ nav {
     padding-left: 0px;
     padding-right: 0px;
 }
+.demo:hover, .demo2:hover, .demo3:hover, .demo4:hover, .demo5:hover {
+    opacity: 1.0;
+    -webkit-transition: opacity 0.3s;
+}
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+    -webkit-transition: opacity 0.3s;
+}
+.w3-display-left, .w3-display-right, .w3-badge, .w3-opacity {
+  cursor:pointer;
+  font-size: 30px;
+}
 </style>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -158,10 +172,50 @@ nav {
 <hr class="featurette-divider">--->
   <div class="row featurette" id="fll">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Qualifier at Arlington High School <span class="text-muted">(February 10, 2018)</span></h2>
-      <p class="lead">We have many improvements to make before this next qualifier, but we are very excited, and hope to advance to States!</p>
+      <h2 class="featurette-heading">State Championship at Natick High School <span class="text-muted">(March 3, 2018)</span></h2>
+      <p class="lead">We are very excited for States in Natick, and hope to advance to Super-Regionals!</p>
     </div>
-    <div class="col-md-5"></div>
+    <div class="col-md-5">
+
+</div></div>
+<hr class="featurette-divider">
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Qualifier at Arlington High School <span class="text-muted">(February 10, 2018)</span></h2>
+      <p class="lead">The Arlington High School Qualifier was a blast! Though we started out with a tough match, we won the rest of our matches, and placed 3rd overall. As a result, during Alliance Selection, we got to pick our own alliance, pairing up with Team 8227 Enginuity. We advanced to the Finals, where we lost to the 1st Place Alliance. Overall, our robot worked well, though we will certainly make a few tweaks to the build and autonomous to make it more consistent. Finally, we won the Inspire Award, advancing us to the State Championship!</p>
+    </div>
+    <div class="col-md-5">
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs(1)">&#10095;</div>
+
+    <img class="mySlides" src="images/competitions/arlington/pic1.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic2.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic3.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic1.jpg" onclick="currentDiv(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity"
+      src="images/competitions/arlington/pic2.jpg" onclick="currentDiv(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic3.jpg" onclick="currentDiv(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic4.jpg" onclick="currentDiv(4)" style="width:100%">
+    </div>
+  </div>
+</div>
+</div>
   </div>
 <hr class="featurette-divider">
   <div class="row featurette" id="fll">
@@ -171,336 +225,6 @@ nav {
     </div>
     <div class="col-md-5"><img src="images/competitions/lexington/pic1.jpg" width = "100%"/></div>
   </div>
-
-  <!---<div>
-  <div class="row featurette">
-    <div class="col-md-7">
-            <h2 class="featurette-heading">FIRST Championship <span class="text-muted">in St. Louis, MO (April 26-29, 2017)</span></h2>
-      <p class="lead">The FIRST Championship was the best experience we have ever had as a team. The venue was amazing, with its light and fire shows, and St. Louis was great to explore. We even got the chance to see the Gateway Arch! Though we did not perform as we would have liked, winning only 5 out of our 9 matches and finishing in 31st place in our division, we were honored to have advanced in the first place and had a ton of fun. We met many great people and saw many amazing robots, and are glad we got the opportunity to come. The traditional FTC season has now ended, and we hope to return next year (to Detroit)!</p>
-    </div>
-    <div class="col-md-5">
-<div id="slider5" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/worlds/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic8.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic9.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic10.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic11.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic12.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel5" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/worlds/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic8.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic9.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic10.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic11.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/worlds/pic12.jpg" />
-    </li>
-  </ul>
-</div>    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">East Super-Regional Championship <span class="text-muted">at The University of Scranton in Scranton, PA (March 17-19, 2016)</span></h2>
-      <p class="lead">Super-Regionals had its ups and downs. In the Qualification round, due to some complications with our alliance partners' autonomous, we were only able to win 3 matches out of 9. This put us in 24th place. However, due to the compatibility of our robot and autonomous programs with other teams, we were picked by 5484 Enderbots, the 4th seed, for their alliance. We took out the 1st seeded alliance in the semifinals and the 2nd seeded alliance in the finals, and won the Tesla Division! Though we lost in the overall finals, we will be advancing to the FIRST Championship!</p>
-    </div>
-
-    <div class="col-md-5">
-<div id="slider4" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/supers/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic8.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel4" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/supers/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic7.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/supers/pic8.jpg" />
-    </li>
-  </ul>
-</div>    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">State Championships <span class="text-muted">at Natick High School (March 4, 2017)</span></h2>
-      <p class="lead">States was an amazing and thrilling competition. We won our first three qualifying matches. In these matches, our autonomous worked very well, pressing both beacons, and we were able to shoot a good number of particles into the center vortex during tele-op. Unfortunately, due to some technical difficulties, we lost our fourth match. Our fifth match was very close, and we lost by only 1 point! We were selected for one of the alliances for the elimination round, but lost in the semifinals. However, at the very end, we won the Inspire Award for all of our hard work and will be advancing to Super-Regionals!</p>
-    </div>
-    <div class="col-md-5">
-<div id="slider3" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/states/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic7.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel3" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/states/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/states/pic7.jpg" />
-    </li>
-  </ul>
-</div>    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Qualifier <span class="text-muted">at Gann Academy (January 22, 2017)</span></h2>
-      <p class="lead">We had a lot of fun at Gyre at Gann. Our robot worked well in teleop, pressing beacons, launching particles into the center vortex, and occasionally lifting the cap ball. Autonomous worked good as well, shooting 1-2 particles in the center vortex, hitting the cap ball onto the playing field, and parking on the center vortex base. We got to the tiebreaker match of the finals! Though we had a few hiccups here and there, we are at a very good stage for States. With a few improvements for consistency and a new autonomous to press beacons, we will be ready to go!</p>
-    </div>
-    <div class="col-md-5">
-<div id="slider" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/gann/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic7.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/gann/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic6.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/gann/pic7.jpg" />
-    </li>
-  </ul>
-</div></div></div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Qualifier <span class="text-muted">at Andover High School (December 11, 2016)</span></h2>
-      <p class="lead">Our Qualifier at Andover was very good. Our robot was consistent in tele-op, scoring 8-10 particles in the corner vortex and getting the beacons quickly. Autonomous also worked well, hitting the cap ball and scoring 2 particles in the corner vortex. We finished in 5th place in the Qualifying Round and made it to the Semifinals. We won the Connect Award for our outreach and will be advancing to the State Championships!</p>
-    </div>
-
-    <div class="col-md-5">
-<div id="slider2" class="flexslider">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/andover/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic6.jpg" />
-    </li>
-  </ul>
-</div>
-<div id="carousel2" class="flexslider c">
-  <ul class="slides">
-    <li>
-      <img src="images/competitions/andover/pic1.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic2.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic3.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic4.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic5.jpg" />
-    </li>
-    <li>
-      <img src="images/competitions/andover/pic6.jpg" />
-    </li>
-  </ul>
-</div>    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Scrimmage <span class="text-muted">at Dartmouth High School (November 19, 2016)</span></h2>
-      <p class="lead">Overall, our scrimmage in Dartmouth went very well. Our robot performed approximately how we expected, and we won all 5 of our matches. We were able to hit the cap ball and score in autonomous (see the <a href="https://www.youtube.com/watch?v=VjWAKgZxpJE" target="_blank">autonomous video</a>), push the beacons, and score 8-10 particles into the corner vortex per match (see the <a href="https://www.youtube.com/watch?v=q43MSgQbHok" target="_blank">teleop video</a>). This was a very positive beginning to the season for us and we hope to continue in this manner. However, there are still many improvements to make for our Qualifier in December, so it's time to get working!</p>
-    </div>
-    <div class="col-md-5"> <img src="images/competitions/dartmouth/team.jpg" width="100%" alt="Dartmouth team"> </div>
-  </div>--->  
   
   <hr class="featurette-divider">
   
@@ -523,145 +247,175 @@ nav {
 <!-- Nice scrolling -->
 <script src="js/scrolling.js"></script>
 
-<!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
 
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel2').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider2'
-      });
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
 
-      $('#slider2').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel2",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
 
-<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel3').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider3'
-      });
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
 
-      $('#slider3').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel3",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script><script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel4').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider4'
-      });
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
 
-      $('#slider4').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel4",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+function currentDiv2(n) {
+  showDivs2(slideIndex2 = n);
+}
 
-<script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('#carousel5').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 110,
-        itemMargin: 5,
-        asNavFor: '#slider5'
-      });
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " w3-opacity-off";
+}
 
-      $('#slider5').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel5",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+  showDivs3(slideIndex3 += n);
+}
+
+function currentDiv3(n) {
+  showDivs3(slideIndex3 = n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("demo3");
+  if (n > x.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex3-1].style.display = "block";
+  dots[slideIndex3-1].className += " w3-opacity-off";
+}
+
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(n) {
+  showDivs4(slideIndex4 += n);
+}
+
+function currentDiv4(n) {
+  showDivs4(slideIndex4 = n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("demo4");
+  if (n > x.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex4-1].style.display = "block";
+  dots[slideIndex4-1].className += " w3-opacity-off";
+}
+
+var slideIndex5 = 1;
+showDivs5(slideIndex5);
+
+function plusDivs5(n) {
+  showDivs5(slideIndex5 += n);
+}
+
+function currentDiv5(n) {
+  showDivs5(slideIndex5 = n);
+}
+
+function showDivs5(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides5");
+  var dots = document.getElementsByClassName("demo5");
+  if (n > x.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex5-1].style.display = "block";
+  dots[slideIndex5-1].className += " w3-opacity-off";
+}
+
+var slideIndex6 = 1;
+showDivs6(slideIndex6);
+
+function plusDivs6(n) {
+  showDivs6(slideIndex6 += n);
+}
+
+function currentDiv6(n) {
+  showDivs6(slideIndex6 = n);
+}
+
+function showDivs6(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides6");
+  var dots = document.getElementsByClassName("demo6");
+  if (n > x.length) {slideIndex6 = 1}
+  if (n < 1) {slideIndex6 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex6-1].style.display = "block";
+  dots[slideIndex6-1].className += " w3-opacity-off";
+}
+
+
+</script>
+
 </body>
 <!-- InstanceEnd --></html>
