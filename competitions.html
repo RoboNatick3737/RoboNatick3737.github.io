@@ -1,9 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!-- InstanceBegin template="/Templates/sidePage.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta http-equiv="refresh" content="0; url=http://hankstanks3737.org/competitions" />
+<meta name="theme-color" content="orange">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<link rel="shortcut icon" type="image/png" href="images/tank_icon.png" style="border-radius: 10px;"/>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>3737 Hank's Tanks | Competitions</title>
+<!-- InstanceEndEditable -->
+<!-- Bootstrap -->
+<link href="css/w3.css" rel="stylesheet">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Carousel -->
+<link href="bootstrap/css/carousel.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+<!-- Page description -->
+<meta name="description" content="RoboNatick 3737: Hank's Tanks. Competitions. Descriptions and pictures of our team's competitions throughout the season.">
+
+<style type="text/css">
+@media only screen and (max-width: 480px) {
+.carousel-caption h1 {
+	font-size: 13px;
+}
+.featurette-heading {
+	margin-top: 30px;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+.carousel-caption h1 {
+	font-size: 23px;
+}
+.featurette-heading {
+	margin-top: 30px;
+}
+}
+@media only screen and (min-width: 768px) {
+.featurette-heading {
+	font-size: 33px;
+}
+}
+.featurette-divider {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#about-heading {
+	margin-top: 0px;
+}
+#developers-heading {
+	margin-top: 0px;
+	padding-bottom: 30px;
+}
+.col-lg-6 {
+	padding-top: 20px;
+}
+.navbar-wrapper {
+	position: fixed;
+	border-radius: 0px;
+}
+.col-md-5 img {
+	float: bottom;
+}
+nav {
+	border-radius: 0px;
+}
+.featurette-heading {
+	margin-top: 10px;
+}
+.page-header {
+	margin-top: 80px;
+}
+.navigation * {
+	border-radius: 0 !important;
+}
+.navigation * {
+  background-color: orange;
+}
+#main_link, #home a, #robot a, #competitions a, #team a, #outreach a, #contact a, #dd a, #finalrobot a, #resources a {
+	font-weight: bold;
+	color: #3f3f3f;
+}
+#dd a:focus {
+	background-color: #E59400;
+}
+.navbar-wrapper .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.demo:hover, .demo2:hover, .demo3:hover, .demo4:hover, .demo5:hover {
+    opacity: 1.0;
+    -webkit-transition: opacity 0.3s;
+}
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {
+    -webkit-transition: opacity 0.3s;
+}
+.w3-display-left, .w3-display-right, .w3-badge, .w3-opacity {
+  cursor:pointer;
+  font-size: 30px;
+}
+</style>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+#competitions a {
+	color: #FFF;
+}
+#competitions a:hover {
+	opacity: 1.0;
+}
+</style>
+<!-- InstanceEndEditable -->
 </head>
 <body>
-<p>Redirecting you to our new URL... <a href="http://hankstanks3737.org/competitions">Click here</a> if page does not automatically refresh in 5 seconds.</p>
+<a name="top"></a>
+<div class="container marketing">
+  <!-- Navbar -->
+<div class="navbar-wrapper">
+    <div class="container navigation">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="/" id="main_link" ><img style="float:left; padding-right: 5px" height="89%" src="images/nav_icon.png">Hank's Tanks</a> </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li id="home"><a href="/">Home</a></li>
+	      <li id="robot"><a href="robot">Robot</a></li>
+	      <!---<li id="dd" class="dropdown"> <a id="robots" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Robots<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li id="robot"><a style="background-color: orange;" href="preliminary_robot">Preliminary Robot</a></li>
+                  <li id="finalrobot"><a style="background-color: orange;" href="final_robot">Final Robot</a></li>
+                </ul>
+              </li>--->
+	      <li id="competitions"><a href="competitions">Competitions</a></li>
+	      <li id="team"><a href="team">Team</a></li>
+	      <li id="outreach"><a href="outreach">Outreach</a></li>
+	      <li id="resources"><a href="resources">Resources</a></li>
+	      <li id="contact"><a href="contact">Contact Us</a></li>
+	      <li id="dd" class="dropdown"> <a id="pastSeasons" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Past Seasons<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li id="season2015"><a style="background-color: orange;" href="http://www.natickhighwebdesign.com/hankstanks/index.html" target="_blank">2015-2016 Season</a></li>
+                  <li id="season2016"><a style="background-color: orange;" href="/2016-2017/home" target="_blank">2016-2017 Season</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="page-header">
+    <h1><!-- InstanceBeginEditable name="Header" -->Competitions<!-- InstanceEndEditable --></h1>
+<p class="lead"></p>
+  </div>
+<!---<div class="" id="upcoming">
+    <h2>Upcoming</h2>
+<p class="lead"></p>
+  </div>
+<hr class="featurette-divider">--->
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Maryland Tech Invitational at Atholton High School <span class="text-muted">(June 23-24, 2018)</span></h2>
+      <p class="lead">We saw a lot of good friends at MTI this year, and had a ton of fun competing. Thank you to the organizers for hosting this amazing post-season event yet again!</p>
+    </div>
+    <div class="col-md-5">
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs2(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs2(1)">&#10095;</div>
+
+    <img class="mySlides2" src="images/competitions/mti/pic1.jpg" style="width:100%">
+    <img class="mySlides2" src="images/competitions/mti/pic2.jpg" style="width:100%">
+    <img class="mySlides2" src="images/competitions/mti/pic3.jpg" style="width:100%">
+    <img class="mySlides2" src="images/competitions/mti/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/competitions/mti/pic1.jpg" onclick="currentDiv2(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity"
+      src="images/competitions/mti/pic2.jpg" onclick="currentDiv2(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/competitions/mti/pic3.jpg" onclick="currentDiv2(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo2 w3-opacity" 
+      src="images/competitions/mti/pic4.jpg" onclick="currentDiv2(4)" style="width:100%">
+    </div>
+  </div>
+</div>
+</div></div>
+<hr class="featurette-divider">
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">State Championship at Natick High School <span class="text-muted">(March 3, 2018)</span></h2>
+      <p class="lead">We had a really fun time at States. Since it was at our High School, we helped set up the night before. Competition day did not go as well as we hoped, as our robot disconnected in several matches and autonomous was not as consistent as we had liked. Though we were chosen for the Elimination Round, we lost in the semifinals. We did win the PTC Design Award, however, for our robot's unique build. We were not able to advance to Super-Regionals this season, but hope to attend some post-season events to continue competing!</p>
+    </div>
+    <div class="col-md-5">
+
+</div></div>
+<hr class="featurette-divider">
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Vermont Regional Championship at The University of Vermont <span class="text-muted">(February 24, 2018)</span></h2>
+      <p class="lead">We were honored to be invited to this competition in Vermont, and had a great time. Our day started out rough, as autonomous was not as consistent as we would have liked. However, we were chosen by the 1st Alliance Captain, 11115 Gluten Free, to play in the elimination round. Together with Gluten Free and Team 40 HAX Robotics, their 2nd pick, we won the Finals! Although we did not advance to Super-Regionals, we will come back stronger at the MA State Championship.</p>
+    </div>
+    <div class="col-md-5">
+
+</div></div>
+<hr class="featurette-divider">
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Qualifier at Arlington High School <span class="text-muted">(February 10, 2018)</span></h2>
+      <p class="lead">The Arlington High School Qualifier was a blast! Though we started out with a tough match, we won the rest of our matches, and placed 3rd overall. As a result, during Alliance Selection, we got to pick our own alliance, pairing up with Team 8227 Enginuity. We advanced to the Finals, where we lost to the 1st Place Alliance. Overall, our robot worked well, though we will certainly make a few tweaks to the build and autonomous to make it more consistent. Finally, we won the Inspire Award, advancing us to the State Championship!</p>
+    </div>
+    <div class="col-md-5">
+<div class="w3-content" style="width: 100%">
+  <div style="position:relative;">
+    <div class="w3-display-left w3-text-white" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-display-right w3-text-white" onclick="plusDivs(1)">&#10095;</div>
+
+    <img class="mySlides" src="images/competitions/arlington/pic1.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic2.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic3.jpg" style="width:100%">
+    <img class="mySlides" src="images/competitions/arlington/pic4.jpg" style="width:100%">
+  </div>
+  
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic1.jpg" onclick="currentDiv(1)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity"
+      src="images/competitions/arlington/pic2.jpg" onclick="currentDiv(2)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic3.jpg" onclick="currentDiv(3)" style="width:100%">
+    </div>
+    <div class="w3-col s3">
+      <img class="demo w3-opacity" 
+      src="images/competitions/arlington/pic4.jpg" onclick="currentDiv(4)" style="width:100%">
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+<hr class="featurette-divider">
+  <div class="row featurette" id="fll">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Qualifier at Lexington High School <span class="text-muted">(January 6, 2018)</span></h2>
+      <p class="lead">We had a lot of fun at the Battle of Lexington. Besides a few disconnections, which we will certainly work to fix, our robot performed approximately as expected. In autonomous, it dislodged the correct jewel in most matches. In teleop, we consistently filled up two columns with glyphs. We placed 6th in the first round, were picked by the 2nd place team, and advanced to the finals. Although we lost in the finals, and therefore did not advance to States, we were honored to receive the Motivate Award. With more driver practice and a few tweaks, we are ready to come back stronger at our second qualifier!</p>
+    </div>
+    <div class="col-md-5"><img src="images/competitions/lexington/pic1.jpg" width = "100%"/></div>
+  </div>
+  
+  <hr class="featurette-divider">
+  
+  <footer>
+  <div id="share-buttons">
+    <a href="mailto:ftc3737@gmail.com"><img src="images/socialmedia/email.png" alt="Email" /></a>
+    <a href="https://twitter.com/3737hankstanks" target="_blank"><img src="images/socialmedia/twitter.png" alt="Twitter" /></a>
+    <a href="https://www.instagram.com/ftc3737" target="_blank"><img src="images/socialmedia/instagram.png" alt="Instagram" /></a>
+    <a href="https://www.youtube.com/channel/UCUkntPWY0UKNabeFXzWi7jQ" target="_blank"><img src="images/socialmedia/youtube.png" alt="YouTube" /></a>
+  </div>
+    <p class="pull-right" style="padding-top:3px"><a href="#top">Back to top</a></p>
+  </footer>
+</div>
+<!-- /.container --> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Nice scrolling -->
+<script src="js/scrolling.js"></script>
+
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+  showDivs2(slideIndex2 += n);
+}
+
+function currentDiv2(n) {
+  showDivs2(slideIndex2 = n);
+}
+
+function showDivs2(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo2");
+  if (n > x.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " w3-opacity-off";
+}
+
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+  showDivs3(slideIndex3 += n);
+}
+
+function currentDiv3(n) {
+  showDivs3(slideIndex3 = n);
+}
+
+function showDivs3(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("demo3");
+  if (n > x.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex3-1].style.display = "block";
+  dots[slideIndex3-1].className += " w3-opacity-off";
+}
+
+var slideIndex4 = 1;
+showDivs4(slideIndex4);
+
+function plusDivs4(n) {
+  showDivs4(slideIndex4 += n);
+}
+
+function currentDiv4(n) {
+  showDivs4(slideIndex4 = n);
+}
+
+function showDivs4(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("demo4");
+  if (n > x.length) {slideIndex4 = 1}
+  if (n < 1) {slideIndex4 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex4-1].style.display = "block";
+  dots[slideIndex4-1].className += " w3-opacity-off";
+}
+
+var slideIndex5 = 1;
+showDivs5(slideIndex5);
+
+function plusDivs5(n) {
+  showDivs5(slideIndex5 += n);
+}
+
+function currentDiv5(n) {
+  showDivs5(slideIndex5 = n);
+}
+
+function showDivs5(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides5");
+  var dots = document.getElementsByClassName("demo5");
+  if (n > x.length) {slideIndex5 = 1}
+  if (n < 1) {slideIndex5 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex5-1].style.display = "block";
+  dots[slideIndex5-1].className += " w3-opacity-off";
+}
+
+var slideIndex6 = 1;
+showDivs6(slideIndex6);
+
+function plusDivs6(n) {
+  showDivs6(slideIndex6 += n);
+}
+
+function currentDiv6(n) {
+  showDivs6(slideIndex6 = n);
+}
+
+function showDivs6(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides6");
+  var dots = document.getElementsByClassName("demo6");
+  if (n > x.length) {slideIndex6 = 1}
+  if (n < 1) {slideIndex6 = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex6-1].style.display = "block";
+  dots[slideIndex6-1].className += " w3-opacity-off";
+}
+
+
+</script>
+
 </body>
-</html>
+<!-- InstanceEnd --></html>

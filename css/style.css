@@ -1,0 +1,26 @@
+#dd a:hover {
+	background-color: #E59400;
+}
+@media only screen and (min-width: 1000px) {
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+}
+nav a:hover {
+    opacity: 0.7
+}
+#share-buttons img {
+width: 35px;
+padding-right: 5px;
+padding-left: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+float: left;
+}
+#share-buttons img:hover {
+opacity: 0.7;
+}
+.pull-right {
+padding-top: 3px;
+}
